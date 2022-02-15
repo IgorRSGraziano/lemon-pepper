@@ -1,0 +1,45 @@
+/* line 40, ../../Users/Igor/projects/lemon-pepper/style/scss/global/_global.scss */
+body {
+  margin: 0px;
+}
+
+/* line 44, ../../Users/Igor/projects/lemon-pepper/style/scss/global/_global.scss */
+p {
+  margin: 0px;
+}
+
+/* line 1, ../../Users/Igor/projects/lemon-pepper/style/scss/_schedules.scss */
+.schedules {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 123px;
+  padding-right: 123px;
+  background-color: #ebebeb;
+}
+
+/* line 8, ../../Users/Igor/projects/lemon-pepper/style/scss/_schedules.scss */
+.schedules h2 {
+  font-family: "Open Sans";
+  color: #000000;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* line 11, ../../Users/Igor/projects/lemon-pepper/style/scss/_schedules.scss */
+.schedules h2::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 1px;
+  background-color: #44A755;
+}
+
+/* line 19, ../../Users/Igor/projects/lemon-pepper/style/scss/_schedules.scss */
+.schedules p {
+  font-family: "PT Serif";
+  font-size: 1rem;
+  color: #262626;
+  line-height: 1.3125rem;
+}
+
+/*# sourceMappingURL=style.css.map */

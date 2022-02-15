@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/global/style.scss",
+		"../scss/global/_global.scss",
+		"../scss/_schedules.scss"
+	],
+	"sourcesContent": [
+		"@import 'global';\r\n@import '../schedules';",
+		"//Variáveis\r\n\r\n$background-color-1: #ebebeb;\r\n$background-color-2: #111111;\r\n\r\n$accent-color-1: #B11B1B;\r\n$accent-color-2: #44A755;\r\n\r\n$color-1: #FFFFFF;\r\n$color-2: #000000;\r\n$color-3: #262626;\r\n\r\n$font-1: 'PT Serif';\r\n$font-2: 'Open Sans';\r\n\r\n//Mixins\r\n\r\n@mixin text-1 {\r\n    font-family: $font-1;\r\n    font-size: rem(16);\r\n    color: $color-3;\r\n    line-height: rem(21, 16);\r\n}\r\n\r\n@mixin title-1 {\r\n    font-family: $font-2;\r\n    color: $color-2;\r\n    font-weight: bold;\r\n    font-size: rem(32);\r\n}\r\n\r\n//Functions\r\n\r\n@function rem($px, $context: 16) {\r\n    @return ($px / $context) + rem;\r\n}\r\n\r\n// Modificações\r\n\r\nbody {\r\n    margin: 0px;\r\n}\r\n\r\np {\r\n    margin: 0px;\r\n}",
+		".schedules {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding-left: 123px;\r\n    padding-right: 123px;\r\n    background-color: $background-color-1;\r\n\r\n    h2 {\r\n        @include title-1;\r\n\r\n        &::after {\r\n            content: '';\r\n            display: block;\r\n            width: 72px;\r\n            height: 1px;\r\n            background-color: $accent-color-2;\r\n        }\r\n    }\r\n    p {\r\n        @include text-1;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";ACuCA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,GAAG;CACd;;;AAED,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;CACd;;;AC7CD,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,YAAY,EAAE,KAAK;EACnB,aAAa,EAAE,KAAK;EACpB,gBAAgB,EDHC,OAAO;CCmB3B;;;AArBD,AAOI,UAPM,CAON,EAAE,CAAC;EDkBH,WAAW,EAZN,WAAW;EAahB,KAAK,EAjBC,OAAO;EAkBb,WAAW,EAAE,IAAI;EACjB,SAAS,EAMD,IAAsB;CCjB7B;;;AAjBL,AAUQ,UAVE,CAON,EAAE,AAGG,OAAO,CAAC;EACL,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,gBAAgB,EDTX,OAAO;CCUf;;;AAhBT,AAkBI,UAlBM,CAkBN,CAAC,CAAC;EDAF,WAAW,EANN,UAAU;EAOf,SAAS,EAeD,IAAsB;EAd9B,KAAK,EAVC,OAAO;EAWb,WAAW,EAaH,SAAsB;CCd7B"
+}

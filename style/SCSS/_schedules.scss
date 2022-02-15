@@ -1,0 +1,22 @@
+.schedules {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 123px;
+    padding-right: 123px;
+    background-color: $background-color-1;
+
+    h2 {
+        @include title-1;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 72px;
+            height: 1px;
+            background-color: $accent-color-2;
+        }
+    }
+    p {
+        @include text-1;
+    }
+}

@@ -1,3 +1,5 @@
+//Variáveis
+
 $background-color-1: #ebebeb;
 $background-color-2: #111111;
 
@@ -6,3 +8,39 @@ $accent-color-2: #44A755;
 
 $color-1: #FFFFFF;
 $color-2: #000000;
+$color-3: #262626;
+
+$font-1: 'PT Serif';
+$font-2: 'Open Sans';
+
+//Mixins
+
+@mixin text-1 {
+    font-family: $font-1;
+    font-size: rem(16);
+    color: $color-3;
+    line-height: rem(21, 16);
+}
+
+@mixin title-1 {
+    font-family: $font-2;
+    color: $color-2;
+    font-weight: bold;
+    font-size: rem(32);
+}
+
+//Functions
+
+@function rem($px, $context: 16) {
+    @return ($px / $context) + rem;
+}
+
+// Modificações
+
+body {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
