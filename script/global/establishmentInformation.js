@@ -1,20 +1,13 @@
-export default function initEstablishmentInformation() {
+export default async function initEstablishmentInformation() {
 
     //Informações relativas, e especificas sobre a empresa do site
+    const informationsJSON = await (await fetch('/assets/menu/informations.json')).json()
 
-    const operatingDays = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo']
+    const operatingDays = informationsJSON.operatingDays
 
-    const deliveryTime = {
-        delivery: "1h",
-        pickUp: "30m"
-    }
+    const deliveryTime = informationsJSON.deliveryTime
 
-    const openingTime = {
-        start: "18:00",
-        end: "23:00"
-    }
-
-
+    const openingTime = informationsJSON.openingTime
 
     //Atualiza no site as informações
 

@@ -1,0 +1,21 @@
+{
+  "operatingDays": [
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado",
+    "Domingo"
+  ],
+
+  "deliveryTime": {
+    "delivery": "1h",
+    "pickUp": "30m"
+  },
+
+  "openingTime": {
+    "start": "18:00",
+    "end": "23:00"
+  }
+}
