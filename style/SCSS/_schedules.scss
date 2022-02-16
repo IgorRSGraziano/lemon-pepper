@@ -19,4 +19,23 @@
     p {
         @include text-1;
     }
+    [class^="schedules__opening-time"] {
+        &::before {
+            content: '';
+            width: 15px;
+            height: 7px;
+            display: inline-block;
+            margin: auto 10px 1px auto;
+        }
+    }
+    [class$="open"] {
+        &::before {
+            background-color: $accent-color-2;
+        }
+    }
+    [class$="close"] {
+        &::before {
+            background-color: $accent-color-1;
+        }
+    }
 }
