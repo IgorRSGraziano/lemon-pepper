@@ -19,7 +19,7 @@
     p {
         @include text-1;
     }
-    [class^="schedules__opening-time"] {
+    [class^="schedules__opening-time__icon"] {
         &::before {
             content: '';
             display: none;

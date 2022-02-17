@@ -3,11 +3,13 @@ export default async function initEstablishmentInformation() {
     //Informações relativas, e especificas sobre a empresa do site
     const informationsJSON = await (await fetch('/assets/menu/informations.json')).json()
 
-    const operatingDays = informationsJSON.operatingDays
+    const operatingDays = informationsJSON.establishment.operatingDays
 
-    const deliveryTime = informationsJSON.deliveryTime
+    const deliveryTime = informationsJSON.establishment.deliveryTime
 
-    const openingTime = informationsJSON.openingTime
+    const openingTime = informationsJSON.establishment.openingTime
+
+    console.log(informationsJSON)
 
     //Atualiza no site as informações
 

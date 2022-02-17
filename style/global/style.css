@@ -48,7 +48,7 @@ h2 {
 }
 
 /* line 23, ../../Users/Igor/projects/lemon-pepper/style/scss/_schedules.scss */
-.schedules [class^="schedules__opening-time"]::before {
+.schedules [class^="schedules__opening-time__icon"]::before {
   content: '';
   display: none;
   width: 15px;
