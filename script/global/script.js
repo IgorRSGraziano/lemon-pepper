@@ -1,3 +1,3 @@
-import initEstablishmentInformation from './establishmentInformation.js'
+import initEstablishmentInformation from "./establishmentInformation.js";
 
-initEstablishmentInformation()
+initEstablishmentInformation();

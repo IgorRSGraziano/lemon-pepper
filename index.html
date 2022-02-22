@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/global/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/favicon.svg"
+      type="image/x-icon"
+    />
+    <!--open sans font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/global/style.css" />
     <title>Pizzaria Lemon Pepper</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--?navegation menu-->
+    <header>
+      <div class="menu-logo">
+        <a href="#home">
+          <img src="assets/icons/logo.svg" alt="Logo" class="menu-svg__logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu__links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#horario">Horário</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--?end of navegation menu-->
+
+    <!--
     <section class="schedules">
-        <div class="schedules__delivery">
-            <h2>Horários de entrega</h2>
-            <p>Tempo de entrega: <span data-delivery-time="delivery"></span>.</p>
-            <p>Tempo de retirada: <span data-delivery-time="pickup"></span>.</p>
-        </div>
-        <div class="schedules__opening-time">
-            <h2>Horário de funcionamento</h2>
-            <p class="schedules__opening-time--open">Aberto</p>
-            <p>De <span data-operating-days="first"></span> à <span data-operating-days="last"></span></p>
-            <p>Das <span data-opening-hours="first"></span> até <span data-opening-hours="last"></span>.</p>
-        </div>
-
+      <div class="schedules__delivery">
+        <h2>Horários de entrega</h2>
+        <p>Tempo de entrega: <span data-delivery-time="delivery"></span>.</p>
+        <p>Tempo de retirada: <span data-delivery-time="pickup"></span>.</p>
+      </div>
+      <div class="schedules__opening-time">
+        <h2>Horário de funcionamento</h2>
+        <p class="schedules__opening-time--open">Aberto</p>
+        <p>
+          De <span data-operating-days="first"></span> à
+          <span data-operating-days="last"></span>
+        </p>
+        <p>
+          Das <span data-opening-hours="first"></span> até
+          <span data-opening-hours="last"></span>.
+        </p>
+      </div>
     </section>
+    -->
 
     <script src="/script/global/script.js" type="module"></script>
-</body>
-
+  </body>
 </html>
