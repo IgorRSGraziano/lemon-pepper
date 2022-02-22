@@ -1,0 +1,44 @@
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem 1rem;
+}
+
+.menu__links {
+  display: flex;
+
+  & li a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    color: $color-1;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    justify-content: center;
+    & .menu-svg__logo {
+      display: block;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  }
+
+  .menu__links {
+    display: flex;
+    justify-content: center;
+    & li {
+      margin: 0 0.7rem;
+    }
+  }
+}
